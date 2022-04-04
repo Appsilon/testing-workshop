@@ -2,6 +2,7 @@ box::use(
   shiny[...],
   graphics[barplot],
 )
+box::use(view/plot)
 
 #' @export
 ui <- function(id) {
@@ -26,10 +27,7 @@ ui <- function(id) {
 server <- function(id) {
   moduleServer(id, function(input, output, session) {
     output$phonePlot <- renderPlot({
-      barplot(datasets::WorldPhones[,input$region]*1000, 
-              main = input$region,
-              ylab = "Number of Telephones",
-              xlab = "Year")
+      plot$generate_plot(input$region)
     })
   })
 }
