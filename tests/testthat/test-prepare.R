@@ -3,7 +3,7 @@ box::use(
   testthat[...],
 )
 box::use(
-  app/logic/data[...],
+  app/logic/prepare[...],
 )
 
 test_that("get_column_multiplied returns column by name in matrix", {
