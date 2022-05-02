@@ -1,6 +1,7 @@
 box::use(
   shiny[...],
   graphics[barplot],
+  glue[glue]
 )
 box::use(view/plot)
 
@@ -8,7 +9,7 @@ box::use(view/plot)
 ui <- function(id) {
   ns <- NS(id)
   fluidPage(
-    titlePanel("Telephones by region"),
+    uiOutput(ns("title")),
     sidebarLayout(      
       sidebarPanel(
         selectInput(ns("region"), "Region:", 
@@ -26,6 +27,11 @@ ui <- function(id) {
 #' @export
 server <- function(id) {
   moduleServer(id, function(input, output, session) {
+    output$title <- renderUI({
+      titlePanel(
+        glue("Telephones by region: {input$region}")
+      )
+    })
     output$phonePlot <- renderPlot({
       plot$generate_plot(input$region)
     })
