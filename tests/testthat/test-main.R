@@ -8,6 +8,9 @@ box::use(
 
 test_that("main server works", {
   testServer(server, {
-    expect_equal(output$message, "Hello!")
+    session$setInputs(region = "Oceania")
+    expect_true(
+      grepl("Telephones by region: Oceania", output$title$html)
+    )
   })
 })
