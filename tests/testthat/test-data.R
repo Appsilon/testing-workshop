@@ -4,7 +4,6 @@ box::use(
   testthat[...],
 )
 
-
 test_that("WorldPhones follows assumptions in the app", {
   dataset <- data.frame(datasets::WorldPhones)
   report <- data_validation_report()
@@ -19,4 +18,3 @@ test_that("WorldPhones follows assumptions in the app", {
   
   expect_true(all(validations$type == "success"))
 })
-
