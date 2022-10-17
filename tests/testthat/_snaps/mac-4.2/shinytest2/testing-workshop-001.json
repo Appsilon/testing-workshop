@@ -1,0 +1,51 @@
+{
+  "input": {
+    "app-region": "Europe"
+  },
+  "output": {
+    "app-phonePlot": {
+      "src": "[image data hash: 0115a9ba995089e2cace3a7aaf8b0f55]",
+      "width": 729,
+      "height": 400,
+      "alt": "Plot object",
+      "coordmap": {
+        "panels": [
+          {
+            "domain": {
+              "left": -0.128,
+              "right": 8.728,
+              "bottom": -431730,
+              "top": 43173000
+            },
+            "range": {
+              "left": 59.04,
+              "right": 698.76,
+              "bottom": 325.56,
+              "top": 58.04
+            },
+            "log": {
+              "x": null,
+              "y": null
+            },
+            "mapping": {
+
+            }
+          }
+        ],
+        "dims": {
+          "width": 729,
+          "height": 400
+        }
+      }
+    },
+    "app-title": {
+      "html": "<head>\n  <title>Telephones by region: Europe<\/title>\n<\/head>\n<h2>Telephones by region: Europe<\/h2>",
+      "deps": [
+
+      ]
+    }
+  },
+  "export": {
+
+  }
+}
