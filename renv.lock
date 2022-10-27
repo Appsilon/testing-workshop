@@ -235,10 +235,10 @@
     },
     "data.validator": {
       "Package": "data.validator",
-      "Version": "0.1.7",
+      "Version": "0.1.6",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "488c1094fed241369806094b5b83f6eb"
+      "Repository": "RSPM",
+      "Hash": "0fee1e7aab8b694694351315486903d0"
     },
     "desc": {
       "Package": "desc",
@@ -436,6 +436,13 @@
       "Repository": "CRAN",
       "Hash": "7e7b457d7766bc47f2a5f21cc2984f8e"
     },
+    "lattice": {
+      "Package": "lattice",
+      "Version": "0.20-45",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "b64cdbb2b340437c4ee047a1f4c4377b"
+    },
     "lazyeval": {
       "Package": "lazyeval",
       "Version": "0.2.2",
@@ -477,6 +484,13 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "e2817ccf4a065c5d9d7f2cfbe7c1d78c"
+    },
+    "mgcv": {
+      "Package": "mgcv",
+      "Version": "1.8-40",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "c6b2fdb18cf68ab613bd564363e1ba0d"
     },
     "mime": {
       "Package": "mime",
